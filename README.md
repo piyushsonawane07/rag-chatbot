@@ -110,6 +110,9 @@ The web interface will be available at `http://localhost:3000`
 
 ## API Endpoints
 
+- `POST /api/store`: This endpoint is used to load and persist document data into vector stores (PDF and website embeddings). It processes the source documents and stores their vector representations using OpenAIEmbeddings and Chroma.
+- Call this API after adding or updating your documents to ensure your RAG system can retrieve the latest content.
+
 - `POST /api/ask`: Chat with the RAG model
   ```json
   {
